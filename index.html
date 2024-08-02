@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>
         어스인사이트
     </title>
@@ -21,7 +22,7 @@
         <h2 class="max-w-[1100px] w-full m-auto text-md md:text-3xl text-gray-400 font-bold text-center my-5 md:my-10">
             여러분들은 개미가 아닙니다. 소중한 자산을 지키는 공부를 통해서 올바른 투자, <br> 건강한 투자를 함께 해나가시길 바랍니다
         </h2>
-        <div class="hero max-w-[1500px] w-full m-auto">
+        <div class="hero max-w-[1500px] w-full m-auto" data-aos="fade-down" data-aos-duration="2500">
             <img src="./assets/img/hero.png" alt="" class="w-full">
         </div>
         <div class="hero-btn max-w-[500px] w-full m-auto">
@@ -231,10 +232,10 @@
             </p>
         </h1>
         <div class="max-w-[1200px] w-full m-auto inline-block sm:flex justify-between items-center gap-10 mt-20">
-            <div class="image">
+            <div class="image" data-aos="fade-right" data-aos-duration="2500">
                 <img src="./assets/img/pic1.png" alt="" class="w-full p-8">
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-left" data-aos-duration="2500">
                 <img src="./assets/img/pic2.png" alt="" class="w-full p-8">
             </div>
         </div>
@@ -250,13 +251,13 @@
             </p>
         </h1>
         <div class="max-w-[1200px] w-full m-auto inline-block sm:flex justify-between items-center gap-10 mt-10 md:mt-20 *:mt-5 sm:*:mt-0 p-3 sm:p-0">
-            <div class="image">
+            <div class="image" data-aos="fade-right" data-aos-duration="2500">
                 <img src="./assets/img/pic3.png" alt="" class="w-full">
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-up" data-aos-duration="2500">
                 <img src="./assets/img/pic4.png" alt="" class="w-full">
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-left" data-aos-duration="2500">
                 <img src="./assets/img/pic5.png" alt="" class="w-full">
             </div>
         </div>
@@ -272,7 +273,7 @@
             </p>
         </h1>
         <div class="max-w-[1200px] w-full m-auto flex justify-between items-center gap-10 mt-10 md:mt-20">
-            <div class="image">
+            <div class="image" data-aos="fade-down" data-aos-duration="2500">
                 <img src="./assets/img/pic6.png" alt="" class="w-full">
             </div>
         </div>
@@ -300,7 +301,7 @@
     </div>
     <div class="blog-3 bg-[#1d1f1f] py-40 w-full">
         <div class="main-box max-w-[1200px] w-full m-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="box bg-white p-10 rounded-[40px]">
+            <div class="box bg-white p-10 rounded-[40px]" data-aos="fade-down" data-aos-duration="2500">
                 <p class="text-2xl font-bold my-3">어스와 함께해주세요!</p>
                 <p class="text-2xl font-bold my-3">함께 기부하며 <span class="text-green-500">올바른 투자문화</span>를 만들어갈</p>
                 <p class="text-2xl font-bold my-3"><span class="text-green-500">마스터</span>가 되어보세요</p>
@@ -316,7 +317,7 @@
                     <img src="./assets/img/pic9.png" alt="" class="w-full">
                 </div>
             </div>
-            <div class="box bg-white p-10 rounded-[40px]">
+            <div class="box bg-white p-10 rounded-[40px]" data-aos="fade-down" data-aos-duration="2500">
                 <p class="text-2xl font-bold my-3">어스와 함께 성장하세요!</p>
                 <p class="text-2xl font-bold my-3"><span class="text-green-500">강연, 기업협력</span>등 다양한 방식으로</p>
                 <p class="text-2xl font-bold my-3"><span class="text-green-500">사업을 제휴</span>합니다.</p>
@@ -353,6 +354,10 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 </html>
